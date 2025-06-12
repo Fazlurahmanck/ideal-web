@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="{% static 'images\Ideal Logo.png' %}">
+    <title>IDEAL ITI & Technical Institute</title>
+    <link rel="stylesheet" href="{% static '/css/first.css' %}">
+    <link rel="stylesheet" href="{% static '/css/second.css' %}">
+    <link rel="stylesheet" href="{% static '/css/about.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776;
+            </div>
+            <div class="logo">              
+                <img src="{% static 'images\Ideal Logo.png' %}" alt="IDEAL ITI Logo" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#cou">Courses</a></li>
+                <li><a href="#abo">About Us</a></li>
+                <li><a href="#con">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h1><span class="highlight">IDEAL</span> PRIVATE ITI</h1>
+            <p>
+                Students who have passed S. S. L. C or Plus Two can obtain an engineering certificate from the Kerala
+                government and get good jobs in their home country by completing this two-year course.
+            </p>
+            <div class="btn_num">
+                <a href="#cou" class="btn">📚 Start Learning</a>
+                <p class="phone">📞 94 47 68 15 21 | 96 45 74 03 90</p>
+            </div>
+        </div>
+        <div class="hero-img">         
+            <img src="{% static 'images\portrait-young-architect-man-wearing-white-helmet-hold-blue-print-hand-he-standing-with-smile-looking-camera-pink.png' %}"
+                alt="Happy Student" />
+        </div>
+    </section>
+
+
+    <section class="course-section" id="cou">
+        <div class="course-image">
+           
+            <img src=" {% static 'images\b0bff2b1-2fd8-46bb-a8bd-287fde59fdaf.jpg' %}" alt="Draughtsman Civil" />
+        </div>
+        <div class="course-content">
+            <h2>DRAUGHTSMAN CIVIL</h2>
+            <ul>
+                <li>📅 Duration: <strong>2 Years</strong></li>
+                <li>✅ 100% Placement Assistance</li>
+                <li>🏢 Government Approved Certificate</li>
+            </ul>
+            <p>This course offers a professional pathway in civil engineering drafting with industry-relevant skills.
+            </p>
+            <a href="https://wa.me/919447681521" class="whatsapp-btn" target="_blank">📲 Chat on WhatsApp</a>
+        </div>
+    </section>
+
+
+    <section class="about-section" id="abo">
+        <div class="about-content">
+            <h2>ABOUT US</h2>
+            <p><strong>IDEAL PRIVATE ITI</strong> was established in 2010 with a mission to provide
+                quality technical education and skills training to students from all walks of life.</p>
+            <p>Located in Edakkara, Kerala, we are committed to shaping future professionals through certified
+                government-approved programs, expert faculty, and real-world experience.</p>
+            <p><strong>Over 14 years of excellence</strong><br>
+                Thousands of students have successfully completed our courses and found jobs both in India and abroad.
+            </p>
+            <p>Our focus is not just on education — but <strong>transformation</strong>.</p>
+        </div>
+        <div class="about-image">            
+            <img src="{% static 'images\Gemini_Generated_Image_c0x27wc0x27wc0x2.png' %}" alt="IDEAL Institute Building" />
+        </div>
+    </section>
+
+
+    <footer class="site-footer" id="con">
+        <div class="footer-content">
+            <div class="footer-logos">              
+                <img src="{% static 'images\ITI LOGO.png' %}" alt="ITI Logo" />
+                <img src="{% static 'images\NCVT LOGO.png' %}" alt="NCVT Logo" />
+                <img src=" {% static 'images\SKILL.png' %}" alt="NCVT Logo" />
+            </div>
+
+            <div class="footer-contact">
+                <p>📞 <strong>9447681521</strong>, <strong>9645740390</strong></p>
+                <p>📧 <a href="mailto:idealsakeer@gmail.com">idealsakeer@gmail.com</a></p>
+                <p>📍 Edakkara, Malappuram</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Ideal Private ITI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
